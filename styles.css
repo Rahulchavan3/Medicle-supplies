@@ -15,6 +15,7 @@ h2 {
     align-items: center;
 }
 
+
 .toolbar {
     margin-bottom: 20px;
 }
@@ -26,16 +27,34 @@ h2 {
     color: #333;
 }
 
-#addRow { color: green; }
-#moveDown { color: #007bff; }
-#moveUp { color: #007bff; }
-#deleteRow { color: red; }
-#undo { color: #ffc107; }
-#save { color: blue; }
+#addRow { 
+    color: orange;
+}
+
+#moveDown { 
+    color: #17a2b8; 
+}
+
+#moveUp { 
+    color: #6c757d; 
+}
+
+#deleteRow { 
+    color: red; 
+}
+
+#undo { 
+    color: #ffc107; 
+}
+
+#save { 
+    color: #28a745; 
+}
 
 .toolbar i:hover {
     opacity: 0.7;
 }
+
 
 table {
     width: 100%;
@@ -63,6 +82,7 @@ th:nth-child(7), td:nth-child(7) { width: 10%; }
 th:nth-child(8), td:nth-child(8) { width: 10%; }
 th:nth-child(9), td:nth-child(9) { width: 10%; }
 
+
 .editing-cell {
     border: 2px solid #007BFF;
 }
@@ -89,6 +109,7 @@ input[type="number"]:focus {
     background-color: #e6f7ff;
 }
 
+
 .feedback-error {
     color: red;
 }
@@ -97,11 +118,60 @@ input[type="number"]:focus {
     color: green;
 }
 
-/* Mobile view */
+
+
+.mobile-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mobile-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+
+@media (min-width: 768px) {
+    #mobileView {
+        display: none;
+    }
+
+    #desktopView {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) { 
+    .toolbar i:not(#addRow) {
+        display: none; 
+    }
+}
+
+
+@media (min-width: 769px) {
+    .toolbar {
+        display: flex; 
+    }
+}
+@media (max-width: 767px) {
+    #desktopView {
+        display: none;
+    }
+
+    #mobileView {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
+
     table {
         display: none; 
     }
+
 
     #mobileCards {
         display: flex;
@@ -181,8 +251,4 @@ input[type="number"]:focus {
     .edit-form button:hover {
         background-color: #218838; 
     }
-
-
-
-
 }

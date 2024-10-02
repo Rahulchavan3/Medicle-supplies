@@ -12,42 +12,39 @@
 <div class="header-container">
     <h2>Chemical Supplies</h2>
     <div class="toolbar">
-        <i id="addRow" class="fas fa-plus" title="Add Row"></i>
-        <i id="moveDown" class="fas fa-arrow-down" title="Move Down"></i>
-        <i id="moveUp" class="fas fa-arrow-up" title="Move Up"></i>
-        <i id="deleteRow" class="fas fa-trash" title="Delete Row"></i>
-        <i id="undo" class="fas fa-undo" title="Undo"></i>
-        <i id="save" class="fas fa-save" title="Save"></i>
+        <i id="addRow" onclick="addRow()" class="fas fa-plus" title="Add Row"></i>
+        <i id="moveDown" onclick="moveRowDown()" class="fas fa-arrow-down" title="Move Down"></i>
+        <i id="moveUp" onclick="moveRowUp()" class="fas fa-arrow-up" title="Move Up"></i>
+        <i id="deleteRow" onclick="deleteRow()" class="fas fa-trash" title="Delete Row"></i>
+        <i id="undo" onclick="undoLastAction()" class="fas fa-undo" title="Undo"></i>
+        <i id="save" onclick="saveData()" class="fas fa-save" title="Save"></i>
     </div>
+    
 </div>
 
 <div class="feedback" id="feedbackMessage"></div>
-
 
 <div class="table-responsive">
     <table id="chemicalTable">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Chemical Name</th>
-                <th>Vendor</th>
-                <th>Density (g/m³)</th>
-                <th>Viscosity (m²/s)</th>
-                <th>Packaging</th>
-                <th>Pack Size</th>
-                <th>Unit</th>
-                <th>Quantity</th>
+                <th onclick="sortTable('id')">ID</th>
+                <th onclick="sortTable('name')">Chemical Name</th>
+                <th onclick="sortTable('vendor')">Vendor</th>
+                <th onclick="sortTable('density')">Density (g/m³)</th>
+                <th onclick="sortTable('viscosity')">Viscosity (m²/s)</th>
+                <th onclick="sortTable('packaging')">Packaging</th>
+                <th onclick="sortTable('packSize')">Pack Size</th>
+                <th onclick="sortTable('unit')">Unit</th>
+                <th onclick="sortTable('quantity')">Quantity</th>
             </tr>
         </thead>
-        <tbody>
-
-        </tbody>
+        <tbody></tbody>
     </table>
 </div>
 
-
-<div id="mobileCards" class="mobile-card-container" style="display:none;">
-
+<div id="mobileView" style="display:none;">
+    <div id="mobileCards" class="mobile-card-container"></div>
 </div>
 
 <script src="app.js"></script>
