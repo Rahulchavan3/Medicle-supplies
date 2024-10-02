@@ -1,0 +1,31 @@
+Chemical Supplies Management System Documentation
+Overview
+The Chemical Supplies Management System is a web application designed for managing and tracking chemical supplies. The application allows users to view, add, edit, delete, and sort chemical data in an intuitive interface, with both desktop and mobile views.
+
+Technologies Used
+HTML: To structure the content of the web application.
+CSS: For styling the layout and appearance of the application.
+JavaScript: To implement interactive features, data manipulation, and dynamic content updates.
+Font Awesome: To provide icons for user actions.
+
+Key Features
+Dynamic Table Display: View chemical supplies in a structured table format with sortable columns.
+Add, Edit, Delete Rows: Add new chemical supplies, edit existing entries, and delete selected rows.
+Undo Functionality: Undo the last action performed on the chemical data.
+Row Movement: Move selected rows up or down in the table.
+Mobile Responsiveness: A mobile card view for easier access on smaller screens.
+User Feedback: Notifications for successful actions or errors to guide user interactions.
+
+How to Access and Use the Application
+
+
+Access the Application: Open the index.html file in a web browser.
+Interacting with the Table:
+Select a Row: Click on a row to select it. Hold the selection to perform actions.
+Add a Row: Click the + icon to add a new row.
+Edit a Row: Double-click on any cell to edit its content.
+Delete a Row: Click the trash icon to delete the selected row.
+Move Rows: Use the up/down arrows to rearrange the selected row.
+Undo Last Action: Click the undo icon to revert the last change.
+View on Mobile: Resize the browser window to less than 768 pixels or open the application on a mobile device to view in card format.
+Feedback Notifications: View messages at the top for confirmations and errors during interactions.
