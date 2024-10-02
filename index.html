@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="header-container">
+    <h2>Chemical Supplies</h2>
+    <div class="toolbar">
+        <i id="addRow" class="fas fa-plus" title="Add Row"></i>
+        <i id="moveDown" class="fas fa-arrow-down" title="Move Down"></i>
+        <i id="moveUp" class="fas fa-arrow-up" title="Move Up"></i>
+        <i id="deleteRow" class="fas fa-trash" title="Delete Row"></i>
+        <i id="undo" class="fas fa-undo" title="Undo"></i>
+        <i id="save" class="fas fa-save" title="Save"></i>
+    </div>
+</div>
+
+<div class="feedback" id="feedbackMessage"></div>
+
+
+<div class="table-responsive">
+    <table id="chemicalTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Chemical Name</th>
+                <th>Vendor</th>
+                <th>Density (g/m³)</th>
+                <th>Viscosity (m²/s)</th>
+                <th>Packaging</th>
+                <th>Pack Size</th>
+                <th>Unit</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+
+<div id="mobileCards" class="mobile-card-container" style="display:none;">
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
